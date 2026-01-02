@@ -8,8 +8,8 @@ fi
 
 dnf install  mysql -y
 
-if [ $USERID -eq 0 ] ; then 
+if [ $? -ne 0 ] ; then 
     echo "installed mysql as root user"
 else
-    ehco " mysql not installed"
+    echo " mysql not installed"
 fi
