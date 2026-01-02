@@ -6,7 +6,7 @@ read HOUR
 
 if [ $HOUR -lt 12 ] ; then
     echo "Good Morning"
-elif [ $HOUR -gt 16 ] ; then
+elif [ $HOUR -lt 18 ] ; then
     echo "Good Evening"
 else
     echo "Good Night"
