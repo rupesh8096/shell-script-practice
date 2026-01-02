@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(id)
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
     echo " This user in not root user"
